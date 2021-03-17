@@ -1,0 +1,98 @@
+import math
+print("\t-----CALCULATOR----")
+def sum(a,b):
+    a+=b
+    return a
+def sub(a,b):
+    if a>b:
+        a-=b
+        return a
+    else:
+        b-=a
+        return b
+def mul(a,b):
+    a*=b
+    return a
+def div(a,b):
+    q=a/b
+    r=a%b
+    print("\n The Quotient is : %s"%q)
+    print("\n The remainder is :%s"%r)
+def sqr(a):
+    x=math.sqrt(a)
+    return x
+while(True):
+    print("\n\n Choose your operation you want to perform:")
+    print("\n\t1.ADDITION")
+    print("\n\t2.SUBTRACTION")
+    print("\n\t3.MULTIPLICATION")
+    print("\n\t4.DIVISION")
+    print("\n\t5.SQUARE ROOT")
+    print("\n|t6.EXIT")
+choice=int(input('>'))
+if (choice == 1):
+           print("\n\n Enter the two numbers: ")
+           n1=int(input('>'))
+           n2=int(input('>'))
+           s=sum(n1,n2)
+           print(" The sum is :%s"%s)
+
+elif choice==2:
+           print("\n\n Enter the two numbers: ")
+           n1=int(input('>'))
+           n2=int(input('>'))
+           m=sub(n1,n2)
+           print(" The difference is :%s"%m)
+
+elif choice==3:
+           print("\n\n Enter the two numbers: ")
+           n1=int(input('>'))
+           n2=int(input('>'))
+           p=mul(n1,n2)
+           print(" The product is :%s"%p)
+elif choice==4:
+           print("\n\n Enter the two numbers: ")
+           n1=int(input('>'))
+           n2=int(input('>'))
+           d=div(n1,n2)
+           print(" The divison is :%s"%d)
+elif choice==5:
+           print("\n\n Enter the  number: ")
+           n1=int(input('>'))
+           r=sqr(n1)
+           print(" The square root is :%s"%r)
+           
+else:
+    print(" \n You Chose to exit.Bye...")
+    
+    
+    
+    
+    
+    
+OUTPUT:-
+-----CALCULATOR----
+
+
+ Choose your operation you want to perform:
+
+	1.ADDITION
+
+	2.SUBTRACTION
+
+	3.MULTIPLICATION
+
+	4.DIVISION
+
+	5.SQUARE ROOT
+
+|t6.EXIT
+>5
+
+
+ Enter the  number: 
+>5
+ The square root is :2.23606797749979
+>>> 
+
+
